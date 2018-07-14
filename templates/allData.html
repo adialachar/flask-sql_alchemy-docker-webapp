@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+	<table style = "width:100%">
+		<tr>
+			<th> User ID: </th>
+			<th> Username </th>
+			<th> Email </th>
+			<th> Original Major </th>
+			<th> Current Major </th>
+			<th> Home Town </th>
+
+		</tr>
+		
+		{% for item in q %}
+
+			<tr>
+			
+				<td> {{item[0].id}} </td>
+				<td> {{item[0].username}} </td>
+				<td> {{item[0].email}} </td>
+				<td> {{item[1].originalMajor}} </td>
+				<td> {{item[1].currentMajor}} </td>
+				<td> {{item[1].homeTown}} , CA </td>
+			
+
+			</tr>
+
+		{% endfor %}
+
+
+
+	</table>
+
+
+
+
+</html>

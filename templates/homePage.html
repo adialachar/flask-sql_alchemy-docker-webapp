@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+	<title> Enter an Integer </title>
+
+</head>
+
+<form action = "http://localhost:3000/initDB" method = "POST" >
+	
+	<p> <input type = "submit" value = "Initialize_Databases" /> </p>
+
+</form>
+
+
+
+
+
+<body>
+
+<h3> Add a user to the database </h3>
+</body>
+<form action = "http://localhost:3000/addUser" method = "POST" >
+
+ID: <br>
+
+<input type ="text" name = "Integer" > <br>
+
+Username: <br>
+
+<input type = "text" name = "username" ><br>
+
+Email address: <br>
+
+<input type = "text" name = "email" > <br>
+
+<p> <input type = "submit" value = "add user" /> </p>
+
+</form>
+
+<body>
+<h3> Add Details about the User </h3>
+</body>
+
+<form action ="http://localhost:3000/addUserDetails" method = "POST" >
+
+ID: <br>
+
+<input type = "text" name = "Integer" > <br>
+
+Username: <br>
+
+<input type = "text" name = "username" > <br>
+
+Original Major: <br>
+
+<input type = "text" name = "originalMajor" > <br>
+
+Current Major:<br>
+
+<input type = "text" name = "currentMajor" > <br>
+
+Home Town: <br>
+
+<input type = "text" name = "homeTown" > <br>
+
+<p> <input type = "submit" value = "add details" /> </p>
+
+</form>
+
+
+
+
+<body>
+
+<h3> Enter an Integer and username to access the User's email address </h3>
+
+</body>
+
+<form action = "http://localhost:3000/findUserEmail" method = "POST">
+
+
+Integer: <br>
+
+<input type="text" name="Integer"><br>
+
+Username: <br>
+<input type="text" name="username"><br>
+
+<p><input type = "submit" value = "submit" /> </p>
+
+
+</form>
+
+
+<body>
+
+Access all data
+
+</body>
+
+
+<form action = "http://localhost:3000/allData" method = "POST" >
+
+
+<p><input type = "submit" value = "Access all data" /> </p>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
